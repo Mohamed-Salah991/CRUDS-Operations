@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: rgb(39, 38, 38);
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff; 
+    /* tis the text in the input  */
+}
+input::placeholder {
+    font-size: 17px;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.03);
+    transition: all 0.4s ease;
+    font-size:15px;
+}
+.price input{
+    width: 20%;
+}
+.price small{
+    background-color: #ff00007d ; 
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.price small::before{
+    content: "Total:"; 
+    margin-right: 3px;
+    /* position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 3px; */
+}
+.create_btn{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 150px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #2323a5;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+button:hover{
+    transform: scale(1.01);
+    background-color: #6b70bf;
+    color: black;
+    letter-spacing: 1.3px;
+}
+.searchBlock{
+    display: flex;
+    flex-direction: column;
+}
+.searchBlock .search_btn{
+    display: flex;
+    justify-content: space-around;
+}
+.search_btn button{
+    margin-top: 5px;
+    width: calc(80% /2);
+    font-size: 16px;
+}
+.deleteAll{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.deleteAll button{
+    width: 200px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+table button{
+    font-size: 17px;
+    padding: 7px;
+    margin: 3px 0;
+}
+table th{
+    text-transform: uppercase;
+    padding: 5px;
+}
+table td{
+    font-size: 17px;
+}
